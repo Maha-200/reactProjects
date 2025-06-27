@@ -1,0 +1,484 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* My css */
+.wid{
+  width: 500px;
+}
+.navbar-nav{
+  font-size: 20px;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 30px;
+ }
+ .color li{
+color: red;
+ }
+ .color{
+  background-color: rgb(111, 168, 253);
+ }
+ /*Table*/
+ thead[data-test="table-foot"]{
+  display: none;
+}
+/* pop up */
+.tables tr td {
+  background-color: white;
+  }
+.tables td{
+  padding: 10px;
+}
+.tab th{
+  background-color: #179ec4;
+}
+.tab td{
+  background-color: rgb(144, 201, 238);
+}
+.tcolor button{
+
+  background-color:  rgb(20, 64, 209);
+color: white;
+  /* padding: 0px 5px 0px 5px; */
+  padding: 5px;
+ font-size: 15px;
+ border: none;
+ box-shadow: 2px 2px 5px #555;
+}
+.tcolor button:hover{
+  background-color: rgb(5, 35, 134);
+
+}
+/* Header */
+nav{
+  /* background-color: rgb(35, 3, 110); */
+  background-image: linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85));
+  position: fixed!important;
+  /* top: 0;                
+  left: 0;                  */
+  width: 100%;            
+  z-index: 9999; 
+}
+.navlist{
+  padding-left: 200px;
+}
+.hover-underline-animation {
+  position: relative;
+  color: #FFFFFF;
+ }
+ .hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(235, 195, 115);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation::after{
+ transform: scaleX(0);
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+.hover-underline-animation:hover::after {
+  transform-origin: bottom left;
+}
+.badge{
+  padding: 0px;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: -10px;
+  /* right: -10px; */
+  left: -10px;
+  width: 1.2rem;
+}
+
+.pricing-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+  width: 100%;
+}
+/* .nav-item:hover .pricing-dropdown{
+  display: block;
+}  */
+.pricing-dropdown.show {
+  display: block; 
+}
+
+.pricing-dropdown .row {
+  background-image: linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85));
+  color: white;
+}
+
+.pricing-dropdown h6 {
+  margin-bottom: 10px;
+  color: rgb(235, 195, 115);
+
+}
+
+.pricing-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-dropdown li {
+  margin-bottom: 5px;
+}
+.nav-link i{
+  margin-left: 10px;
+  font-size: 20px;
+}
+/* banner */
+.banner-image{
+  padding-top: 50px;
+  height: 500px;
+  width: 80%;
+}
+.bimg{
+  height:90vh;
+  width:100%;
+}
+.carousel-item {
+  position: relative; /* Make sure the item is positioned for the text */
+}
+
+.word {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  font-weight: bold; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  z-index: 2;
+}
+/* product */
+.d-flex{
+  flex-wrap: wrap;
+}
+.menu{
+  padding-top: 70px;
+  text-align: center;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(6, 6, 80);
+}
+.style b{
+  color: #835a0d; 
+  text-align: center;
+}
+ .style{
+  width: 100%;
+  box-shadow: 2px 2px 5px #555;
+}
+ 
+ .card .img1{
+  width: 290px;
+  height: 200px;
+  padding: 10px;
+ }
+ .style i{
+  /* border: 1px solid black; */
+  color: rgb(30, 3, 102);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+ }
+
+
+ .about{
+  background-image: linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85));
+  text-align: center;
+  height: 600px;
+  width: 100%;
+ }
+ .about h1{
+  /* color: gold; */
+  color: rgb(235, 195, 115);
+  padding-top: 50px;
+  font-size: 65px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+.about h3{
+  color: wheat;
+  padding: 20px;
+  line-height: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .shop{
+  /* background-image: linear-gradient(linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85))); */
+  background-color:  rgb(235, 195, 115);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  width: 200px;
+  margin-top: 30px;
+  color: rgb(35, 3, 110);
+  font-weight: bold;
+ }
+ /* cart */
+.cart-container{
+  border: 1px solid black;
+ justify-content: space-around;
+ /* flex-wrap: wrap; */
+}
+.cart-container .row{
+  display: flex;
+  justify-content: space-evenly; /* Evenly distribute space */
+  align-items: center; /* Center content vertically */
+}
+.cart-container .col-sm-6{
+  display: flex;
+  justify-content: space-around;
+
+}
+.cart-container img{
+  height: 100px;
+  width: 140px;
+  margin: 5px;
+
+}
+.cart-container button{
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+ 
+    background-color: rgb(122, 202, 248);
+    box-shadow:2px 2px 5px #555;
+  
+  
+}
+.cart-container p{
+  font-size: 20px;
+  padding-top: 20px;
+}
+.incr-btn i{
+  color: green;
+  font-size: 30px;
+ }
+ .dec-btn i{
+  color:red;
+  font-size: 30px;
+ }
+/* favourites */
+.selected-product{
+  flex-wrap: wrap;
+  border: 1px solid white;
+}
+.selected-product img{
+  height: 100px;
+  width: 150px;
+}
+.selected-product p{
+  font-size: 20px;
+  padding-top: 10px;
+  color: white;
+}
+.selected-product button{
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+}
+.selected-products-list{
+  background-color: #179ec4;
+
+}
+
+/* confirmationModal */
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-actions button {
+  margin: 10px;
+}
+/* Footer */
+.footer{
+  /* background-color: #831183; */
+  background-image: linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85));
+
+}
+.social-media-wrapper i{
+  color: white;
+  font-size: 20px;
+}
+/* Login */
+.background{
+  background-image: url('./images/Cadbury-Dairy-Milk-Logo.png');
+  background-repeat: no-repeat;
+  height: 640px;
+  background-size: cover; 
+}
+.form{
+   width: 380px;
+   margin: auto;
+   border-radius: 25px;
+
+   box-shadow: 0 0 20px rgb(49, 48, 48);
+   border: 1px solid black;
+   height: 500px;
+   backdrop-filter: blur(15px);
+}
+.header{
+   text-align: center;
+   padding-top: 50px;
+}
+.header h1{
+   color: wheat;
+   font-size: 45px;
+   font-weight: bold;
+   margin-bottom: 80px;
+   font-family: 'Times New Roman', Times, serif;
+}
+#form{
+   text-align: center;
+   
+}
+#form input{
+   width: 300px;
+   height: 40px;
+    border: none;
+   outline: none; 
+   padding-left: 40px;
+   box-sizing: border-box;
+   font-size: 15px;
+   background-color: #ddd;
+}
+#form button{
+   width: 200px;
+   height: 40px;
+   /* border-radius: 10px; */
+   padding-left: 0;
+   background-color: rgb(84, 5, 121);
+   color: white;
+   letter-spacing: 1px;
+   font-weight: bold;
+   /* margin-bottom: 10px; */
+   border: none;
+   
+}
+#form button:hover{
+   box-shadow: 2px 2px 5px #555;
+   background-color: rgb(45, 23, 141);
+}
+#form input:hover{
+   box-shadow: 2px 2px 5px #555;
+   background-color: #ddd;
+}
+
+#form i{
+   position: relative;
+   left: 25px;
+   color: rgb(68, 23, 141);
+   font-size: 20px;
+   top: 2px;
+}
+ .form-group{
+   padding-bottom: 20px;
+} 
+/* contact */
+.contact{
+  opacity: 0.7;
+  /* background-color: rgba(58, 55, 55, 0.048); */
+   background-image: url("/src/images/background_1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.contact-section h2{
+  /* background-image: linear-gradient(to right, rgb(35, 3, 110),rgb(66, 2, 85)); */
+  color: rgb(6, 6, 80);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* basicARD */
+.basic_img{
+  height: 300px;
+  width: 300px;
+}
+.basic_word h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(6, 6, 80);
+  font-size: 40px;
+}
+.basic_word h2{
+  color: #835a0d;
+  font-size: 30px;
+  font-weight: bold;
+}
+.basic_word i{
+  
+  padding-top: 20px;
+  font-size: 20px;
+}
+.basic_word p{
+  padding-top: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.basic_word{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
